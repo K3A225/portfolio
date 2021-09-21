@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ange Kadio</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/65cda776e5.js" crossorigin="anonymous"></script>
+</head>
+<body id="Page">
+    <header id="mainHeader">
+        <img src="/images/ange.jpg" alt="Logo du site" id="logoImg">
+        <h1><a href="#">Ange Kadio</a></h1>
+        <nav class="mainNav">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#aboutMe">A propos de moi</a></li>
+                <li><a href="#projects">Mes projets</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+        <button id="menuToggle"><img src="/images/layout/bars-solid.svg" alt=""></button>
+    </header>
+    <div id="banner"></div>
+    <div id="welcome">
+        <h1>Bienvenue sur mon site personnel</h1>
+        <hr>
+        <p>Développeur full stack & Technicien réseau</p>
+        <div class="button">
+            <a href="/media/AHOSSI.KADIO_CV.pdf" download>Mon CV</a>
+            <a href="#contact">Me contacter</a>
+        </div>
+    </div>
+    <main id="pageContent">
+        <section id="aboutMe">
+            <h1 class="title">A propos de moi</h1>
+            <hr>
+            <div class="div1">
+                <div class="text">
+                    <div class="right">
+                        <p><img src="/images/ange.jpg"></p>
+                        <div class="imgColor"></div>
+                    </div>
+                    <p>
+                        Je suis Kadio Ahossi Ange Armand, développeur web et technicien réseau, je fais de la
+                        programmation backend et frontend, et de l’administration réseau ainsi que la gestion 
+                        de serveurs.
+                    </p>
+                    <p>
+                        Passionné des nouvelles technologies de l’information je m’investis dans ce domaine afin 
+                        de pouvoir résoudre les problèmes quotidien avec des solutions numériques et accompagner
+                        les entreprise ou les particuliers en ce qui concerne le bon fonctionnement de leurs activités en
+                        les proposant des solutions numériques tels que les sites web (que ce soit vitrine ou 
+                        e-commerce, etc...) et des applicatins de gestion selon leurs besoins.
+                    </p>
+                </div>
+                <div class="photo">
+                    <p><img src="/images/ange.jpg"></p>
+                    <div class="imgColor"></div>
+                </div>
+            </div>
+            <div class="div2">
+                <div>
+                    <h1 class="title2">Information</h1>
+                    <p class="gray"><i class="far fa-user"></i>Kadio Ahossi Ange Armand</p>
+                    <p class="gray"><i class="fas fa-phone-alt"></i>+225 0779278265 / 0758856481</p>
+                    <p class="gray"><i class="far fa-envelope"></i>ahossi.kadio@protonmail.com</p>
+                    <p class="gray"><i class="fas fa-map-marker-alt"></i>Abidjan, Yopougon Ananeraie</p>
+                </div>
+                <div>
+                    <h1 class="title2">Expérience</h1>
+                    <p class="gray">
+                        J’ai éffectuer 3 mois de stage au sein de
+                        la structure Sucrivoire (Zuénoula) et
+                        j’étais chargé de la gestion du parc
+                        informatique et du maintien de l’accès
+                        au réseau. 
+                    </p>
+                </div>
+            </div>
+            <div class="div3">
+                <h1 class="title2">Mes compétences</h1>
+                <div class="grid">
+                    <div class="frontend grid1">
+                        <h1 class="title3">Frontend</h1>
+                        <p class="gray">HTML/CSS</p><span></span>
+                        <p class="gray">JAVASCRIPT</p><span></span>
+                    </div>
+                    <div class="backend grid2">
+                        <h1 class="title3 backend">Backend</h1>
+                        <p class="gray">Node js</p><span></span>
+                        <p class="gray">Python</p><span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 class="title">Mes projets</h1>
+            <hr class="hr">
+            <div class="first">
+                <div>
+                    <img src="/images/gstock.PNG" alt="Image du premier projet" class="firstImg">
+                </div>
+                <div class="paragraphe">
+                    <p>
+                        G-Stock est une application de gestion de stock développé en python qui permet à une une
+                        entreprise ou un particulier de gérer le suivi de ses marchandises ou
+                        produits.
+                    </p>
+                </div>
+            </div>
+            <hr class="divHr">
+            <div class="second">
+                <div>
+                    <img src="/images/marquette1.PNG" alt="Image du second projet">
+                </div>
+                <div class="paragraphe">
+                    <p>
+                        Réalisation de la maquette du site web de IGS (Ivoire Geek School)
+                        avec le logiciel de design Figma.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="title">Me contacter</h1>
+            <hr>
+            <p>
+                Avez-vous un projet ou une question ? Remplissez le formulaire ci-dessous pour me
+                contacter où vous pouvez me joindre aux numéros ou à l'adresse ci-dessous,
+                je me ferai le plaisir de vous répondre et dans les plus brefs délai.
+            </p>
+            <form action="#">
+                <div class="form">
+                    <div>
+                        <input type="text" name="name" required placeholder="Votre nom *">
+                        <input type="email" name="email" required placeholder="Votre email *">
+                        <input type="text" name="phone" required placeholder="Votre numéro de téléphone">
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Votre message *"></textarea>
+                    </div>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <div class="form-contact">
+                <p class="gray"><i class="far fa-envelope"></i>ahossi.kadio@protonmail.com</p>
+                <p class="gray"><i class="fas fa-phone-alt"></i>+225 0779278265 / 0758856481</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Ange Kadio</h1>
+        <p>
+            Je suis Ange Armand Kadio et vous êtes sur mon site web personnel, vous pouvez me contacter ici.
+        </p>
+        <p class="social">
+            <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+            <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+        </p>
+        <small>
+            © 2021 - Toute reproduction est interdite
+        </small>
+    </footer>
+</body>
+</html>

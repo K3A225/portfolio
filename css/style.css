@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --first-color: #E34747;
+    --second-color: #006277;
+    --text-color: #222222;
+    --text-second: #868686;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+/* ================ HEADER ==================== */
+#mainHeader{
+    height: 59px;
+    background-color: white;
+    box-shadow: 1px 1px 7px var(--text-second);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 80px 1fr 60px;
+    z-index: 1000;
+}
+#logoImg{
+    width: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+#mainHeader > h1, a{
+    font-size: 1em;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+}
+.mainNav{
+    position: absolute;
+    width: 81%;
+    height: 100vh;
+    top: 59px;
+    right: -100%;
+    transition: .5s;
+    background-color: var(--second-color);
+    padding: 0;
+}
+.mainNav-view{
+    right: 0;
+}
+.mainNav ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.mainNav a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1.4em;
+    color: white;
+    background-color: none;
+}
+#menuToggle{
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+/* ================== BANNER =================== */
+#banner{
+    height: 74vh;
+    background: url(/images/banner.jpg) center center / cover no-repeat;
+}
+#welcome{
+    background-color: var(--first-color);
+    color: white;
+    margin: -85px 15px 0 15px;
+    padding: 5px;
+    border-radius: 16px;
+}
+#welcome h1{
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: center;
+}
+#welcome hr{
+    display: block;
+    background-color: white;
+    border: none;
+    height: 3px;
+    width: 50px;
+}
+#welcome p{
+    padding: 0px 0px 20px 0;
+    text-align: center;
+}
+#welcome .button{
+    padding-bottom: 25px;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}
+#welcome a{
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 15px 0;
+    margin: 0.5em 0;
+    width: 135px;
+}
+#welcome a:active{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--first-color);
+}
+
+/* ================ PAGE CONTENT ================= */
+#pageContent .gray{
+    color: var(--text-second);
+}
+#pageContent i{
+    color: var(--first-color);
+    margin: 0 10px 0 28px;
+}
+#pageContent .title{
+    font-family: "Bebas Neue";
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--first-color);
+    margin: 0;
+}
+#pageContent .title2{
+    font-size: 1.1em;
+    color: var(--first-color);
+    text-decoration: underline;
+    margin: 50px 0 30px 0;
+}
+#pageContent .title3{
+    font-size: 1em;
+    color: var(--text-color);
+}
+#pageContent hr{
+    display: inline-block;
+    background-color: var(--first-color);
+    border: none;
+    height: 3px;
+    width: 36px;
+}
+#pageContent p{
+    line-height: 1.8em;
+}
+#aboutMe, #projects, #contact, footer{
+    padding: 0 15px;
+    padding-top: 90px;
+}
+#projects{
+    margin-top: 40px;
+}
+#projects h1{
+    padding-top: 40px;
+}
+/* ======================= A PROPOS DE MOI ======================== */
+.div1{
+    display: grid;
+}
+.div1 div:nth-child(1){
+    order: 2;
+}
+.div1 .photo{
+    margin: auto;
+}
+.div1 img{
+    width: 200px;
+    border-top: 3px solid var(--second-color);
+    border-left: 3px solid var(--second-color);
+}
+.div1 .imgColor{
+    width: 200px;
+    height: 200px;
+    background-color: var(--second-color);
+    margin-top: -210px;
+    margin-left: 20px;
+    border-right: 3px solid var(--first-color);
+    border-bottom: 3px solid var(--first-color);
+}
+.right{
+    display: none;
+}
+.div3 p, span{
+    margin-left: 50px;
+}
+.div3 span{
+    display: block;
+    height: 10px;
+    background-color: var(--first-color);
+    border-radius: 10px;
+}
+.frontend span:nth-child(3){
+    width: 70%;
+}
+.frontend span:nth-child(5){
+    width: 40%;
+}
+.backend span:nth-child(3){
+    width: 25%;
+}
+.backend span:nth-child(5){
+    width: 55%;
+}
+.backend{
+    padding-top: 30px;
+}
+
+/* ================= MES PROJETS =================== */
+#projects{
+    background-color: var(--second-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#projects .title{
+    color: white;
+}
+#projects hr{
+    background-color: white;
+    margin-bottom: 40px;
+}
+#projects img{
+    width: 100%;
+}
+#projects p{
+    color: white;
+}
+#projects .divHr{
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: white;
+    margin-top: 30px;
+}
+#projects .second div:first-child, .first div:first-child{
+    display: flex;
+    width: 100%;
+    background: var(--first-color);
+    align-items: center;
+    padding: 5px;
+}
+
+/* ================= CONTACT ME ========================== */
+#contact i{
+    margin-left: 0;
+}
+form input, form textarea, form  button{
+    width: 100%;
+    padding: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+form input, form textarea{
+    border: 1px solid var(--text-second);
+    padding: .7em;
+}
+form textarea{
+    min-height: 10em;
+    resize: none;
+}
+form input:focus, form textarea:focus{
+    outline: none;
+}
+form button{
+    font-weight: bold;
+    background-color: var(--second-color);
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* ======================== FOOTER ======================== */
+footer{
+    background-color: var(--first-color);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-top: 3px solid var(--second-color);
+    margin-top: 70px;
+}
+footer h1{
+    font-family: "Bebas Neue";
+    font-size: 2em;
+    font-weight: normal;
+}
+footer .social{
+    display: flex;
+    justify-content: center;
+}
+footer .social span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--second-color);
+    margin: 10px;
+    border-radius: 50%;
+}
+footer span i{
+    margin-left: 0;
+    color: white;
+}
+footer small{
+    color: #E2D7D7;
+}
+
+/* ============================================================ */
+@media screen and (min-width: 768px){
+    #mainHeader{
+        grid-template-columns: 80px 95px 1fr;
+    }
+    #menuToggle{
+        display: none;
+    }
+    .mainNav{
+        display: flex;
+        justify-content: flex-end;
+        position: static;
+        width: inherit;
+        height: inherit;
+        top: inherit;
+        right: inherit;
+        background-color: inherit;
+        transition: inherit;
+    }
+    .mainNav ul{
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+    .mainNav a{
+        display: inherit;
+        color: var(--text-color);
+        text-transform: uppercase;
+        padding: 20px 10px;
+        margin: 5px;
+    }
+    .mainNav a:hover{
+        color: var(--first-color);
+        transition: .8s;
+    }
+    #welcome{
+        margin-top: -90px;
+    }
+    #welcome h1{
+        font-size: 2em;
+    }
+    .div1 div:nth-child(1){
+        order: inherit;
+    }
+    .div1{
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 50px;
+    }
+    .div1 .photo{
+        margin: inherit;
+    }
+    .div1 img{
+        width: 150px;
+    }
+    .div1 .imgColor{
+        width: 150px;
+        height: 150px;
+        margin-top: -167px;
+        margin-left: 10px;
+    }
+    .div2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    .grid2{
+        padding-top: 0;
+    }
+    .backend{
+        padding-top: 0;
+    }
+    #projects hr{
+        visibility: hidden;
+    }
+    .form-contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .first, .second{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    .paragraphe{
+        display: flex;
+        align-items: center;
+    }
+    .second div:nth-child(1){
+        order: 2;
+    }
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .div1{
+        display: inherit;
+    }
+    .right{
+        display: inherit;
+        float: right;
+        margin-left: 30px;
+    }
+    .photo{
+        display: none;
+    }
+    .text > p{
+        text-align: justify;
+    }
+    #welcome{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #aboutMe, #projects, #contact, footer{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .firstImg{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ============================================================ */
+@media screen and (min-width: 1024px){
+    #welcome{
+        margin: -130px 143px 0 143px;
+        padding: 0px;
+    }
+    #welcome h1{
+        font-size: 48px;
+        font-weight: normal;
+        padding-top: 16px;
+    }
+    #welcome button{
+        width: 170px;
+    }
+    #aboutMe, #projects, #contact, footer{
+        padding-right: 143px;
+        padding-left: 143px;
+    }
+    footer h1{
+        font-size: 48px;
+    }
+    form button{
+        width: 200px;
+    }
+    .form-contact{
+        text-align: left;
+    }
+}
