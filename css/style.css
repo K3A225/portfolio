@@ -80,7 +80,7 @@ body{
 /* ================== BANNER =================== */
 #banner{
     height: 74vh;
-    background: url(/images/banner.jpg) center center / cover no-repeat;
+    background: url(images/banner.jpg) center center / cover no-repeat;
 }
 #welcome{
     background-color: var(--first-color);
